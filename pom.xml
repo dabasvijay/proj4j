@@ -4,7 +4,7 @@
     <groupId>io.github.dabasvijay</groupId>
     <artifactId>proj4j</artifactId>
     <!--  Forked from https://github.com/locationtech/proj4j to make changes for it to be Java 7 compatible -->
-    <version>1..0.0</version>
+    <version>1.1.0</version>
     <packaging>bundle</packaging>
     <name>Proj4J</name>
     <url>https://github.com/locationtech/proj4j</url>
