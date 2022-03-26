@@ -1,13 +1,13 @@
 
+## Original source 
+This Repo has been forked of the Proj4J to make the library work with JDK7.
+
 Proj4J is a Java library for converting coordinates between different geospatial coordinate reference systems.
 It is designed to be compatible with `proj.4` parameters and derives some of its implementation from the `proj.4` sources.
 
 
-This Repo has been forked of the Proj4J is a project in the [LocationTech](https://github.com/locationtech/proj4j) 
+This Repo has been forked of the Proj4J to make the library work with JDK7 which  is a project in the [LocationTech](https://github.com/locationtech/proj4j) 
 
-## User Guide
-
-Proj4J artifacts are available on maven central.
 
 ### Using Proj4J with Maven
 
@@ -74,7 +74,3 @@ wgsToUtm.transform(new ProjCoordinate(lon, lat), result);
 ## Building, Testing and installing locally
 
 `mvn clean install`
-
-## Contributing
-
-If you are interested in contributing to Proj4J please read the [**Contributing Guide**](CONTRIBUTING.md).
