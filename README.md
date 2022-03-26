@@ -1,11 +1,9 @@
-# Proj4J [![GitHub Action Status](https://github.com/locationtech/proj4j/workflows/CI/badge.svg)](https://github.com/locationtech/proj4j/actions) [![Maven Central](https://img.shields.io/maven-central/v/org.locationtech.proj4j/proj4j)](https://search.maven.org/search?q=g:org.locationtech.proj4j%20AND%20a:proj4j)
 
 Proj4J is a Java library for converting coordinates between different geospatial coordinate reference systems.
 It is designed to be compatible with `proj.4` parameters and derives some of its implementation from the `proj.4` sources.
 
-Proj4J is a project in the [LocationTech](http://www.locationtech.org) working group of the Eclipse Foundation.
 
-![LocationTech](locationtech_mark.png) 
+This Repo has been forked of the Proj4J is a project in the [LocationTech](https://github.com/locationtech/proj4j) 
 
 ## User Guide
 
@@ -20,7 +18,7 @@ To include Proj4J in a Maven project, add a dependency block like the following:
     <proj4j.version><latest version></proj4j.version>
 </properties>
 <dependency>
-    <groupId>org.locationtech.proj4j</groupId>
+    <groupId>io.github.dabasvijay</groupId>
     <artifactId>proj4j</artifactId>
     <version>${proj4j.version}</version>
 </dependency>
