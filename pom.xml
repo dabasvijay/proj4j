@@ -23,20 +23,11 @@
 
     <developers>
         <developer>
-            <id>echeipesh</id>
-            <name>Eugene Cheipesh</name>
-            <url>https://github.com/echeipesh</url>
+            <id>dabasvijay</id>
+            <name>Vijay Dabas</name>
+            <url>https://github.com/dabasvijay/</url>
         </developer>
-        <developer>
-            <id>lossyrob</id>
-            <name>Rob Emanuele</name>
-            <url>https://github.com/lossyrob</url>
-        </developer>
-        <developer>
-            <id>pomadchin</id>
-            <name>Grigory Pomadchin</name>
-            <url>https://github.com/pomadchin</url>
-        </developer>
+
     </developers>
 
     <contributors>
@@ -146,31 +137,17 @@
     </build>
 
     <profiles>
-        <profile>
-            <id>eclipse</id>
-            <distributionManagement>
-                <repository>
-                    <id>repo.eclipse.org</id>
-                    <name>Proj4J Repository - Releases</name>
-                    <url>https://repo.eclipse.org/content/repositories/proj4j-releases/</url>
-                </repository>
-                <snapshotRepository>
-                    <id>repo.eclipse.org</id>
-                    <name>Proj4J Repository - Snapshots</name>
-                    <url>https://repo.eclipse.org/content/repositories/proj4j-snapshots/</url>
-                </snapshotRepository>
-            </distributionManagement>
-        </profile>
+
         <profile>
             <id>central</id>
             <distributionManagement>
                 <repository>
                     <id>ossrh</id>
-                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                    <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
                 <snapshotRepository>
                     <id>ossrh</id>
-                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                    <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
                 </snapshotRepository>
             </distributionManagement>
             <build>
@@ -182,24 +159,11 @@
                         <extensions>true</extensions>
                         <configuration>
                         <serverId>ossrh</serverId>
-                        <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                        <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                        <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+                        <autoReleaseAfterClose>true</autoReleaseAfterClose>
                         </configuration>
                     </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.6</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
+
                 </plugins>
             </build>
         </profile>
